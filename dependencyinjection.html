@@ -1,0 +1,21 @@
+<!DOCTYPE>
+<html>
+<head><title></title>
+<script lang="javascript">
+	function service() {
+		return { name: "Service" };
+	}
+	function router() {
+		return { name: "Router" };
+	}
+	function main(service, router) {
+		console.log(service(), router());
+	}
+	function load() {
+		main(service, router);
+	}
+</script>
+</head>
+<body onload="load()">
+</body>
+</html>
